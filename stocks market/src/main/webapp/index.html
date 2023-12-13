@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <head id="head1" runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="bitcoin, ethereum, dogecoin">
+    <meta name="author" content="Omkar, Prasad">
+    <title>index</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="marketNews.html" target="_self">Market News</a></li>
+                <li><a href="stockAnalysis.html" target="_self">Stocks Analysis</a></li>
+                <li><a href="marketOverview.html" target="_self">Market Overview</a></li>
+                <li><a href="economicCalender.html" target="_self">Economic Calender</a></li>
+                <li><a href="currency.html" target="_self">Currency Convertor</a></li>
+                <li><a href="payment.html" target="_self">Payment</a></li>
+                <li><a href="aboutus.html" target="_self">About Us</a></li>
+                <li><a href="contatctus.html" target="_self">Contact Us</a></li>
+            </ul>
+            <!-- <a href="#" class="btn" target="_self">EN</a> -->
+            <!-- <a href="snaps.html">
+                <button class="btn" target="_self">Snaps</button>
+            </a> -->
+            <a href="login.html">
+            <button class="btn" target="_self">Login</button>
+            </a>
+             <a href="register.html">
+            <button class="btn" target="_self">Register</button>
+            </a>
+        </nav>
+        <div class="content">
+            <h1>BUY & <br>SELL <span>Stock's</span></h1>
+            <p> venues where buyers and sellers meet to exchange <br> equity shares of public corporations.</p>
+            <a href="explore.html" class="btn">EXPLORE MORE</a>
+        </div>
+
+        <div class="coin-list">
+            <div class="coin">
+                <img src="images/bitcoin.png">
+                <div>
+                    <h3>Rs<span id="bitcoin"></span></h3>
+                    <p>TATA Group</p>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="images/ethereum.png">
+                <div>
+                    <h3>Rs<span id="ethereum"></span></h3>
+                    <p>Adani Group</p>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="images/dogecoin.png">
+                <div>
+                    <h3>Rs<span id="dogecoin"></span></h3>
+                    <p>Reliance Industries</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script"></script>
+    <script>
+    function validate()
+    {
+    var username=document.getElementById("username").value;
+    var password=document.getElemenById("password").value;
+    if(username=="admin" && password==user)
+    {
+        alert("Login Succesfull");
+        return false;
+    }
+    else
+    {
+        alert("Login Failed");
+    }
+    }
+</script>
+<footer>
+    <p class="p-edit-copy">&#169;<b> Copyright 2023 Omkar & Prasad - All Rights Reserved</b></p>
+</footer>
+<script src="//code.tidio.co/77rc3w8lsqsynfwckkfsovfl7qmdhjrv.js"></script>
+</body>
+</html>

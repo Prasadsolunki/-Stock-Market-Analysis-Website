@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis</title>
+    <style>
+        .h1-edit2{
+            color: rgba(0, 0, 0, 0.889);
+            text-align: center;
+            /* background-color: rgba(255, 127, 80, 0.606); */
+        }
+        .tradingview-widget-copyright {
+    display: none !important;
+}
+    </style>
+</head>
+<body>
+    <h1 class="h1-edit2">Overview</h1>
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/symbols/AAPL/" rel="noopener" target="_blank"><span class="blue-text">Apple</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+    {
+    "symbols": [
+      [
+        "Apple",
+        "AAPL|1D"
+      ],
+      [
+        "Google",
+        "GOOGL|1D"
+      ],
+      [
+        "Microsoft",
+        "MSFT|1D"
+      ],
+    ],
+    "chartOnly": false,
+    "width": 1300,
+    "height": 700,
+    "locale": "in",
+    "colorTheme": "light",
+    "autosize": false,
+    "showVolume": false,
+    "showMA": false,
+    "hideDateRanges": false,
+    "hideMarketStatus": false,
+    "hideSymbolLogo": false,
+    "scalePosition": "right",
+    "scaleMode": "Normal",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+    "fontSize": "10",
+    "noTimeScale": false,
+    "valuesTracking": "1",
+    "changeMode": "price-and-percent",
+    "chartType": "line"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+    <!-- 2. -->
+    <!-- TradingView Widget BEGIN -->
+    <p  class="h1-edit">In this as our research we selecting one stock who's return on investment is probally high!</p>
+    <h1 class="h1-edit">Technical Analysis (AAPL)</h1>
+<div class="tradingview-widget-container">
+    <div id="tradingview_1db6e"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL stock chart</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+    new TradingView.widget(
+    {
+    "width": 1000,
+    "height": 500,
+    "symbol": "NASDAQ:AAPL",
+    "interval": "D",
+    "timezone": "Etc/UTC",
+    "theme": "light",
+    "style": "1",
+    "locale": "in",
+    "toolbar_bg": "#f1f3f6",
+    "enable_publishing": true,
+    "withdateranges": true,
+    "hide_side_toolbar": false,
+    "allow_symbol_change": true,
+    "details": true,
+    "hotlist": true,
+    "calendar": true,
+    "show_popup_button": true,
+    "popup_width": "1000",
+    "popup_height": "500",
+    "container_id": "tradingview_1db6e"
+  }
+    );
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+  <!-- 2 -->
+  <!-- TradingView Widget BEGIN -->
+  <h1 class="h1-edit">Basic Area Chart (AAPL)</h1>
+<div class="tradingview-widget-container">
+    <div id="basic-area-chart-demo"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/symbols/AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL stock chart</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+    new TradingView.widget(
+    {
+    "container_id": "basic-area-chart-demo",
+    "width": "1000",
+    "height": "500",
+    "autosize": true,
+    "symbol": "AAPL",
+    "interval": "D",
+    "timezone": "exchange",
+    "theme": "light",
+    "style": "3",
+    "toolbar_bg": "#f1f3f6",
+    "hide_top_toolbar": true,
+    "save_image": false,
+    "locale": "in"
+  }
+    );
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+  <!-- 3. -->
+  <!-- TradingView Widget BEGIN -->
+  <h1 class="h1-edit">Watchlist (AAPL)</h1>
+<div class="tradingview-widget-container">
+    <div id="watchlist-chart-demo"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL stock chart</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+    new TradingView.widget(
+    {
+    "container_id": "watchlist-chart-demo",
+    "width": "1300",
+    "height": "700",
+    "autosize": true,
+    "symbol": "NASDAQ:AAPL",
+    "interval": "D",
+    "timezone": "exchange",
+    "theme": "light",
+    "style": "1",
+    "toolbar_bg": "#f1f3f6",
+    "withdateranges": true,
+    "allow_symbol_change": true,
+    "save_image": false,
+    "watchlist": [
+      "AAPL",
+      "IBM",
+      "TSLA",
+      "AMD",
+      "MSFT",
+      "GOOG"
+    ],
+    "locale": "in"
+  }
+    );
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+  <!-- 4. -->
+  <!-- TradingView Widget BEGIN -->
+  <h1 class="h1-edit">Analytics Platform (AAPL)</h1>
+<div class="tradingview-widget-container">
+    <div id="analytics-platform-chart-demo"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL stock chart</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+    new TradingView.widget(
+    {
+    "container_id": "analytics-platform-chart-demo",
+    "width": "1000%",
+    "height": "500%",
+    "autosize": true,
+    "symbol": "NASDAQ:AAPL",
+    "interval": "D",
+    "timezone": "exchange",
+    "theme": "light",
+    "style": "0",
+    "toolbar_bg": "#f1f3f6",
+    "withdateranges": true,
+    "allow_symbol_change": true,
+    "save_image": false,
+    "details": true,
+    "hotlist": true,
+    "calendar": true,
+    "locale": "in"
+  }
+    );
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+<br>
+  <!-- 5. -->
+  <!-- TradingView Widget BEGIN -->
+  <h1 class="h1-edit">Technical Analysis (AAPL)</h1>
+  <p class="h1-edit">For AAPL In this we provided that you can buy the stock as you wish!</p>
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/symbols/NASDAQ-AAPL/technicals/" rel="noopener" target="_blank"><span class="blue-text">AAPL stock analysis</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+    {
+    "interval": "1m",
+    "width": "1600",
+    "isTransparent": false,
+    "height": "700",
+    "symbol": "NASDAQ:AAPL",
+    "showIntervalTabs": true,
+    "locale": "in",
+    "colorTheme": "light"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+</body>
+</html>

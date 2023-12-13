@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>market News</title>
+    <style>
+      .h1-edit1{
+          color: rgba(0, 0, 0, 0.889);
+          text-align: center;
+          /* background-color: rgba(255, 127, 80, 0.606); */
+      }
+          .tradingview-widget-copyright {
+    display: none !important;
+}
+    </style>
+</head>
+<body>
+<!-- TradingView Widget BEGIN -->
+<h1 class="h1-edit1">Market News</h1>
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/stocks-india/key-events/" rel="noopener" target="_blank"><span class="blue-text">Daily stock news</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+    {
+    "feedMode": "market",
+    "market": "stock",
+    "colorTheme": "light",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "width": "1860",
+    "height": "900",
+    "locale": "in"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+</body>
+</html>
